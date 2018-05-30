@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--当为移动端时，开启以下META-->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="original-content">
+  <h3>DEBUG</h3>
+  <p>
+    <button id="btn-debug">开始DEBUG</button>
+  </p>
+</div>
+<script>
+  $(document).ready(function () {
+    // DEBUG
+    $('#btn-debug').click(function () {
+      window.wjsApp.debug();
+    });
+  });
+</script>
+</body>
+</html>
